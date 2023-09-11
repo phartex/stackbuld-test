@@ -7,7 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'stackbuld-test';
-  user = {
-    name:'nam'
-  }
+
 }
