@@ -1,16 +1,40 @@
 {
   "users": [
     {
-      "id": 3,
-      "name": "jwjwj",
-      "email": "jejeje@gmail.com",
-      "role": "jejeje"
+      "id": 1,
+      "name": "blessing oraku",
+      "email": "blessing@stackbuld.com",
+      "role": "tester"
+    },
+    {
+      "id": 2,
+      "name": "damilare loidi",
+      "email": "blessing@stackbuld.com",
+      "role": "tester"
     },
     {
       "id": 4,
-      "name": "jejejDJ",
-      "email": "JFFJ@gmail.com",
-      "role": "jdjdjdjdj"
+      "name": "emeka henry",
+      "email": "emeka@stackbuld.com",
+      "role": "tester"
+    },
+    {
+      "id": 5,
+      "name": "lorem ipsum",
+      "email": "lorem@stackbuld.com",
+      "role": "tester"
+    },
+    {
+      "id": 6,
+      "name": "osakwe akan",
+      "email": "akan@stackbuld.com",
+      "role": "tester"
+    },
+    {
+      "id": 7,
+      "name": "tobi oraku",
+      "email": "blessing@stackbuld.com",
+      "role": "tester"
     }
   ]
 }
