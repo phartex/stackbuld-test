@@ -1,1 +1,33 @@
-<p>add works!</p>
+<div class="header">
+    <div>
+        <p class="user-text">User Management Dashboard</p>
+    </div>
+ <div></div>
+</div>
+
+
+<div class="form-container">
+    <form [formGroup]="addForm">
+
+
+        <div>
+            <label for="">name:</label>
+            <input type="text"  formControlName="name" (keypress)="checkSpecialCharacters($event)">
+        </div>
+        <div>
+            <label for="">email:</label>
+            <input type="text"  formControlName="email">
+        </div>
+        <div>
+            <label for="">role:</label>
+            <input type="text" formControlName="role" (keypress)="checkSpecialCharacters($event)">
+        </div>
+      
+        <div class="add-btn-container">
+            <button class="add-btn" [disabled]="addForm.invalid" (click)="add()" >Add user</button>
+            
+        </div>
+    </form>
+
+   
+</div>

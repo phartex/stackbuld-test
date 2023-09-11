@@ -1,1 +1,31 @@
-<p>update works!</p>
+<div class="header">
+    <div>
+        <p class="user-text">User Management Dashboard</p>
+    </div>
+ <div></div>
+</div>
+
+
+<div class="form-container">
+    <form >
+        <div>
+            <label for="">name:</label>
+            <input type="text"  [(ngModel)] = "users.name" [ngModelOptions]="{standalone: true}">
+        </div>
+        <div>
+            <label for="">email:</label>
+            <input type="text"  [(ngModel)]= "users.email" [ngModelOptions]="{standalone: true}">
+        </div>
+        <div>
+            <label for="">role:</label>
+            <input type="text" [(ngModel)] = "users.role" [ngModelOptions]="{standalone: true}">
+        </div>
+      
+        <div class="add-btn">
+            <button (click)="update()" >Update</button>
+
+        </div>
+    </form>
+
+   
+</div>

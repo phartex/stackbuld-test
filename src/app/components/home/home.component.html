@@ -1,1 +1,48 @@
-<p>home works!</p>
+
+<div class="header">
+    <div>
+        <p class="user-text">User Management Dashboard</p>
+    </div>
+    <div>
+<button class="add-btn" (click)="addUser()">Add User</button>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="input-container">
+        <input type="text" name="name" class="search-box" [(ngModel)]="name" (ngModelChange)="search()" placeholder="enter name to search">
+    </div>
+    
+    <table class="table-container">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>email</th>
+                <th>role</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+    
+        <tbody>
+            <tr *ngFor="let user of users | paginate:{itemsPerPage:5 ,currentPage:p};" >
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.role}}</td>
+                <td>
+                    <button class="del-btn" (click)="deleteRow(user.id)">Delete</button>
+                    <button class="update-btn" (click)="updateRow(user.id)">Update</button>
+                </td>
+            </tr>
+        </tbody>
+    
+    </table>
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>
+
+
+
+

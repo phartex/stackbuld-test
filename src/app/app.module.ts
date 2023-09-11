@@ -12,7 +12,6 @@ import { UpdateComponent } from './components/update/update.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     AddComponent,
     UpdateComponent
   ],
