@@ -35,6 +35,12 @@
       "name": "tobi oraku",
       "email": "blessing@stackbuld.com",
       "role": "tester"
+    },
+    {
+      "id": 8,
+      "name": "wale fatoki",
+      "email": "wale@stackbuld.com",
+      "role": "tester"
     }
   ]
 }
